@@ -1,0 +1,22 @@
+{
+  "name": "personal-",
+  "version": "1.0.0",
+  "description": "POC to automate test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugohhernandez76/POC-Cypress-Automation-Testing.git"
+  },
+  "author": "Victor Hernandez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hugohhernandez76/POC-Cypress-Automation-Testing/issues"
+  },
+  "homepage": "https://github.com/hugohhernandez76/POC-Cypress-Automation-Testing#readme",
+  "devDependencies": {
+    "cypress": "^10.10.0"
+  }
+}
