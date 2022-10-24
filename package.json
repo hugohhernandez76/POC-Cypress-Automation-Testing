@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/hugohhernandez76/POC-Cypress-Automation-Testing#readme",
   "devDependencies": {
-    "cypress": "^10.10.0"
+    "cypress": "^10.10.0",
+    "cypress-plugin-tab": "^1.0.5",
+    "cypress-xpath": "^2.0.1"
   }
 }
