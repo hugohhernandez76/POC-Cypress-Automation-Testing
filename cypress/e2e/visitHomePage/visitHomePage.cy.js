@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 describe("Visit the homepage", () => {
   beforeEach(() => {
     cy.visit("https://automationteststore.com/");
