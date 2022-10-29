@@ -12,4 +12,10 @@ describe("Handlinng Radio BTNS", () => {
         cy.get("[id='radio-buttons']").find("[type='radio']").as('radioBtns')
         cy.get("@radioBtns").eq(0).check().should("be.checked")
     });
+    it.only('Selected & Disabled', () => {
+        cy.get("[id='radio-buttons-selected-disabled']").find("[value='lettuce']").should("not.be.checked")
+        cy.get("[id='radio-buttons-selected-disabled']").find("[value='cabbage']").should("not.be.checked")
+        cy.get("[id='radio-buttons-selected-disabled']").find("[value='pumpkin']").should("be.checked")
+        
+    });
 });
