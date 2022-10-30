@@ -1,10 +1,11 @@
 /// <reference types="cypress" />
 describe("Handling Autocomplete dropdown list", () => {
-  beforeEach(() => {
+  before(function () { //the function will allow the site to be visited once and run all test
     cy.visit("http://www.webdriveruniversity.com/");
     cy.get("#autocomplete-textfield").invoke("removeAttr", "target").click();
     cy.title("WebDriver | Contact Us");
-  });
+  })
+  
   it("Select word from autocomplete dropdown list", () => {
     cy.get("#myInput").type("L");
     cy.get("#myInputautocomplete-list > *")
