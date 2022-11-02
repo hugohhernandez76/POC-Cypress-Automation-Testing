@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 describe("Test Uploading files", () => {
     beforeEach(() => {
-      cy.visit("http://webdriveruniversity.com/");
+      cy.visit("/");
       cy.get("#file-upload").invoke("removeAttr", "target").click({ force: true });
       cy.url("File-Upload");
       cy.title("File Upload");
@@ -12,7 +12,7 @@ describe("Test Uploading files", () => {
     });
 
     it('Upload No file...', () => {
-        cy.visit("http://www.webdriveruniversity.com");
+        cy.visit("/");
         cy.get('#file-upload').invoke('removeAttr', 'target').click({force:true});
     });
 });

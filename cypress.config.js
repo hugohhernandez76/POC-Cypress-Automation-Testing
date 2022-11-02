@@ -7,6 +7,19 @@ module.exports = defineConfig({
       
     },
     specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx,feature}",
-    chromeWebSecurity: false
+    baseUrl: "http://www.webdriveruniversity.com/",
+    chromeWebSecurity: false,
+    experimentalSessionAndOrigin: true,
+    defaultCommandTimeout: 10000,
+    pageLoadTimeout: 120000,
+    viewportHeight: 1000,
+    viewportWidth: 1000,
+
+    env:{
+      DEV: "Developers environment",
+      QA: "QA Environment",
+      STG: "Staging Environment",
+      PROD: "Production Environment"
+    }
   },
 });

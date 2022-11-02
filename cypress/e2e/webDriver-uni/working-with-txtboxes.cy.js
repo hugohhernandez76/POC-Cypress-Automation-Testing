@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 describe("Handlinng Text Boxes, Radial Buttons and More", () => {
   beforeEach(() => {
-    cy.visit("http://www.webdriveruniversity.com/");
+    cy.visit("/");
     cy.get("#dropdown-checkboxes-radiobuttons")
       .invoke("removeAttr", "target")
       .click();

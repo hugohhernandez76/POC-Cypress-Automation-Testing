@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 describe('Working with mouse actios', () => {
     beforeEach(() => {
-        cy.visit("http://www.webdriveruniversity.com/");
+        cy.visit("/");
         cy.get("#actions").scrollIntoView().invoke("removeAttr", "target").click();
         cy.title("WebDriver | Actions");
       });

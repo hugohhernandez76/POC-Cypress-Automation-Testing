@@ -2,7 +2,7 @@
 
 describe("Hnadling datepicker", () => {
     beforeEach(() => {
-      cy.visit("http://webdriveruniversity.com/");
+      cy.visit("/");
       cy.get("#datepicker").invoke("removeAttr", "target").click({ force: true });
       cy.url("Datepicker");
       cy.title("WebDriver | Datepicker");

@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 describe('Browser Navigation', () => {
     beforeEach(() => {
-        cy.visit("http://www.webdriveruniversity.com/");
+        cy.visit("/");
       });
     it('Confirm links redirect to correct page', () => {
         cy.get("#contact-us").invoke("removeAttr", "target").click()

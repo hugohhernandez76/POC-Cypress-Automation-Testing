@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 describe("Handlinng Alerts", () => {
     beforeEach(() => {
-      cy.visit("http://www.webdriveruniversity.com/");
+      cy.visit("/");
       cy.title("contains", "WebDriver | IFrame")
     });
     it("Confirm Correct Text Alert", () => {

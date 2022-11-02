@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 describe("Handlinng Alerts", () => {
   beforeEach(() => {
-    cy.visit("http://www.webdriveruniversity.com/");
+    cy.visit("/");
   });
   it("Confirm Correct Text Alert", () => {
     cy.get("#popup-alerts").invoke("removeAttr", "target").click();
