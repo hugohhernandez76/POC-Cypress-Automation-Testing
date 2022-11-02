@@ -1,11 +1,12 @@
 /// <reference types="cypress" />
 describe("Handlinng Text Boxes, Radial Buttons and More", () => {
   beforeEach(() => {
-    cy.visit("/");
-    cy.get("#dropdown-checkboxes-radiobuttons")
-      .invoke("removeAttr", "target")
-      .click();
-      cy.title("WebDriver | Dropdown Menu(s) | Checkboxe(s) | Radio Button(s)");
+    //this is a custom command to go straight tot he checkboxes page.
+    cy.navigate_toURL_checkBoxes()
+    // cy.get("#dropdown-checkboxes-radiobuttons")
+    //   .invoke("removeAttr", "target")
+    //   .click();
+    //   cy.title("WebDriver | Dropdown Menu(s) | Checkboxe(s) | Radio Button(s)");
   });
 
   it("Selecting a checkbox and validating is checked", () => {

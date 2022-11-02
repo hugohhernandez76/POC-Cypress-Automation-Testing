@@ -19,6 +19,13 @@
 //
 // -- This is a dual command --
 // Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
+Cypress.Commands.add("navigate_toURL", () =>{
+    cy.visit("/")
+})
+Cypress.Commands.add("navigate_toURL_checkBoxes", () =>{
+    cy.visit("/" + "/Dropdown-Checkboxes-RadioButtons/index.html");
+})
+
 Cypress.Commands.add("selectProduct", productName => {
     cy.get(".fixed_wrapper .prdocutname").each(($el, index, $list) =>{
         cy.log($el.text())
@@ -32,7 +39,7 @@ Cypress.Commands.add("selectProduct", productName => {
 Cypress.Commands.add("addItemsToCart", productName => {
     cy.get(".fixed_wrapper .prdocutname").each(($el, index, $list) =>{
         if ($el.text() === productName) {
-            cy.wrap(".productcart").eq(index).click()
+            cy.get(".productcart").eq(index).click()
             
         }
     })

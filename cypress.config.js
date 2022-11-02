@@ -16,8 +16,8 @@ module.exports = defineConfig({
     viewportWidth: 1000,
 
     env:{
-      DEV: "Developers environment",
-      QA: "QA Environment",
+      DEV: "http://www.webdriveruniversity.com",
+      QA: "https://automationteststore.com/",
       STG: "Staging Environment",
       PROD: "Production Environment"
     }

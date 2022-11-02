@@ -6,7 +6,7 @@ describe('Adding Items to the Cart', () => {
         })
     })
     beforeEach(() => {
-        cy.visit("https://automationteststore.com/");
+        cy.visit(Cypress.env("QA"));
         cy.get("a[href*='product/category']").contains("Makeup").click()
       });
     it('Selecting a particular items and add them to cart ', () => {
