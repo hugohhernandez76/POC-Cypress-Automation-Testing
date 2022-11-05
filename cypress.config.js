@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: 'fbtgi5',
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
@@ -14,6 +15,8 @@ module.exports = defineConfig({
     pageLoadTimeout: 120000,
     viewportHeight: 1000,
     viewportWidth: 1000,
+    screenshotOnRunFailure: true,
+    trashAssetsBeforeRuns: true,
 
     env:{
       DEV: "http://www.webdriveruniversity.com",
