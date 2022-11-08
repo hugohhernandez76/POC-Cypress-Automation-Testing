@@ -4,7 +4,16 @@
   "description": "POC to automate test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "triggerAllTestInDashboard": "npx cypress run --record --key a5b68f8d-d9ae-43c5-89cf-ae831419e58f",
+    "triggerWebdriverUniOnly": "npx cypress run --spec cypress/e2e/webDriver-uni/*",
+    "junit-mergeXML": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
+    "delete-junit-report": " rm -rf cypress/results/junit/results.xml",
+    "delete-results": "rm -rf cypress/results/* || true",
+    "delete-videos": "rm -rf cypress/videos/* || true",
+    "merge-mochawesome-reports": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
+    "delete-mochawesome-report": "rm -rf mochawesome-report/* || true",
+    "cypress-regression-pack": "npm run delete-results && npm run delete-videos && npm run delete-mochawesome-report && npm run triggerWebdriverUniOnly && npm run merge-mochawesome-reports"
+
   },
   "repository": {
     "type": "git",
@@ -18,7 +27,12 @@
   "homepage": "https://github.com/hugohhernandez76/POC-Cypress-Automation-Testing#readme",
   "devDependencies": {
     "cypress": "^10.10.0",
+    "cypress-multi-reporters": "^1.6.1",
     "cypress-plugin-tab": "^1.0.5",
-    "cypress-xpath": "^2.0.1"
+    "cypress-xpath": "^2.0.1",
+    "mocha-junit-reporter": "^2.1.1",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0"
   }
 }

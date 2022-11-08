@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-11-08T17:08:57.267Z",
+    "end": "2022-11-08T17:09:00.473Z",
+    "duration": 3206,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b129546e-cf91-443f-ab87-266a8cf6ac23",
+      "title": "",
+      "fullFile": "cypress/e2e/webDriver-uni/working-with-iframes.cy.js",
+      "file": "cypress/e2e/webDriver-uni/working-with-iframes.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7509b371-b1d2-4ab7-8b33-20e016a509a1",
+          "title": "Handlinng Alerts",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Confirm Correct Text Alert",
+              "fullTitle": "Handlinng Alerts Confirm Correct Text Alert",
+              "timedOut": null,
+              "duration": 3148,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"#iframe\").invoke(\"removeAttr\", \"target\").click();\ncy.url().should(\"include\", \"IFrame\"); //We are using an alias to get access to the body where the other elements are allocated\ncy.get(\"#frame\").then($iframe => {\n  const body = $iframe.contents().find(\"body\");\n  cy.wrap(body).as(\"iframe\");\n});\ncy.get(\"@iframe\").find(\"#button-find-out-more\").click();\ncy.get(\"@iframe\").find(\"#myModal\").as(\"modal\");\ncy.get(\"@modal\").should($expectedText => {\n  const text = $expectedText.text();\n  expect(text).to.include(\"Welcome to webdriveruniversity.com we sell a wide range of electrical goods \");\n});\ncy.get(\"@modal\").contains(\"Close\").click();",
+              "err": {},
+              "uuid": "084946f7-22e0-4b38-a960-5aad0301c4ce",
+              "parentUUID": "7509b371-b1d2-4ab7-8b33-20e016a509a1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "084946f7-22e0-4b38-a960-5aad0301c4ce"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3148,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

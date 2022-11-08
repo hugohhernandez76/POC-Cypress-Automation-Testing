@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-11-08T17:08:05.048Z",
+    "end": "2022-11-08T17:08:09.031Z",
+    "duration": 3983,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "65adb002-9931-47bb-bd9a-f8661282ae67",
+      "title": "",
+      "fullFile": "cypress/e2e/webDriver-uni/autocomplete-dropdown.cy.js",
+      "file": "cypress/e2e/webDriver-uni/autocomplete-dropdown.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6ba6c816-de24-4689-9352-574cbd323a23",
+          "title": "Handling Autocomplete dropdown list",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Select word from autocomplete dropdown list",
+              "fullTitle": "Handling Autocomplete dropdown list Select word from autocomplete dropdown list",
+              "timedOut": null,
+              "duration": 3952,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"#myInput\").type(\"L\");\ncy.get(\"#myInputautocomplete-list > *\").each(($el, index, $list) => {\n  const listItems = $el.text();\n  const itemSelected = \"Linguine\";\n  if (listItems === itemSelected) {\n    cy.wrap($el).click();\n    cy.get(\"#submit-button\").click();\n    cy.url().should(\"include\", itemSelected);\n  }\n}).then(() => {\n  cy.get(\"#myInput\").type(\"G\");\n  cy.get(\"#myInputautocomplete-list > *\").each(($el, index, $list) => {\n    const listItems = $el.text();\n    const itemSelected = \"Grapes\";\n    if (listItems === itemSelected) {\n      cy.wrap($el).click();\n      cy.get(\"#submit-button\").click();\n      cy.url().should(\"include\", itemSelected);\n    }\n  });\n});",
+              "err": {},
+              "uuid": "4c506681-2c4b-4e6c-910a-14774356cb24",
+              "parentUUID": "6ba6c816-de24-4689-9352-574cbd323a23",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4c506681-2c4b-4e6c-910a-14774356cb24"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3952,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
