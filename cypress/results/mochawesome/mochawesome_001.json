@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-11-08T17:08:10.327Z",
-    "end": "2022-11-08T17:08:14.730Z",
-    "duration": 4403,
+    "start": "2022-11-08T17:38:01.410Z",
+    "end": "2022-11-08T17:38:06.954Z",
+    "duration": 5544,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6608342f-28a8-4747-89bc-0191dc8d38a7",
+      "uuid": "8452b294-583e-4dc6-8ee8-73468a5048ed",
       "title": "",
       "fullFile": "cypress/e2e/webDriver-uni/back-forward-reload.cy.js",
       "file": "cypress/e2e/webDriver-uni/back-forward-reload.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9f5c8146-c37e-4ef6-987b-b27e03308da2",
+          "uuid": "50f4ed72-3e9e-4e35-adc7-6f6702bf7c80",
           "title": "Browser Navigation",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Confirm links redirect to correct page",
               "fullTitle": "Browser Navigation Confirm links redirect to correct page",
               "timedOut": null,
-              "duration": 4371,
+              "duration": 5481,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.get(\"#contact-us\").invoke(\"removeAttr\", \"target\").click();\ncy.url().should(\"include\", \"contactus\"); //to go back we use cy.go()\ncy.go(\"back\");\ncy.reload(); //cy.reload(true) will reload page without using cache\ncy.go(\"forward\");\ncy.url().should(\"include\", \"contactus\");\ncy.go(\"back\");\ncy.get(\"#login-portal\").invoke(\"removeAttr\", \"target\").click();\ncy.url().should(\"include\", \"Login-Portal\");\ncy.go(\"back\");\ncy.get(\"#to-do-list\").invoke(\"removeAttr\", \"target\").click();\ncy.url().should(\"include\", \"To-Do-List\");\ncy.go(\"back\");\ncy.title().should(\"include\", \"WebDriverUniversity.com\");",
               "err": {},
-              "uuid": "654c462f-1306-4219-b011-b9bc7c3e80df",
-              "parentUUID": "9f5c8146-c37e-4ef6-987b-b27e03308da2",
+              "uuid": "3ea364a1-7a3a-49c6-a090-753991c75859",
+              "parentUUID": "50f4ed72-3e9e-4e35-adc7-6f6702bf7c80",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "654c462f-1306-4219-b011-b9bc7c3e80df"
+            "3ea364a1-7a3a-49c6-a090-753991c75859"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4371,
+          "duration": 5481,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

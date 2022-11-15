@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-11-08T17:08:26.794Z",
-    "end": "2022-11-08T17:08:29.846Z",
-    "duration": 3052,
+    "start": "2022-11-08T17:38:23.587Z",
+    "end": "2022-11-08T17:38:26.052Z",
+    "duration": 2465,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d4438e9c-5269-4522-86c2-a33a031df4fd",
+      "uuid": "e65a331f-c80e-4757-9185-72cedd58d560",
       "title": "",
       "fullFile": "cypress/e2e/webDriver-uni/handle-dropdown-list.cy.js",
       "file": "cypress/e2e/webDriver-uni/handle-dropdown-list.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b15c6803-e626-4738-b99a-fae33200b57c",
+          "uuid": "9e8a8658-f8c4-45ec-b838-b91fb8e65f10",
           "title": "Handlinng Dropdown List",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Selecting an options from the dropdown list",
               "fullTitle": "Handlinng Dropdown List Selecting an options from the dropdown list",
               "timedOut": null,
-              "duration": 3033,
+              "duration": 2429,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.get(\"#dropdowm-menu-1\").select(\"C#\"); //We are asserting the value\ncy.get(\"#dropdowm-menu-2\").select(\"testng\").should(\"have.value\", \"testng\"); //Asserting with text\ncy.get(\"#dropdowm-menu-3\").select(\"JavaScript\").contains(\"JavaScript\");",
               "err": {},
-              "uuid": "c9e295cb-d005-450e-bcb9-bf114c96f802",
-              "parentUUID": "b15c6803-e626-4738-b99a-fae33200b57c",
+              "uuid": "df9327b8-f2a2-4aec-bcab-826a0b358dee",
+              "parentUUID": "9e8a8658-f8c4-45ec-b838-b91fb8e65f10",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c9e295cb-d005-450e-bcb9-bf114c96f802"
+            "df9327b8-f2a2-4aec-bcab-826a0b358dee"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3033,
+          "duration": 2429,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

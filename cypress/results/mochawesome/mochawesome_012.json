@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2022-11-08T17:09:04.928Z",
-    "end": "2022-11-08T17:09:06.927Z",
-    "duration": 1999,
+    "start": "2022-11-08T17:39:16.024Z",
+    "end": "2022-11-08T17:39:18.110Z",
+    "duration": 2086,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ae86e4d6-cdeb-42ea-bb66-4efad1d8103c",
+      "uuid": "9b526144-b58b-451e-a17f-b1b28f04d8e5",
       "title": "",
       "fullFile": "cypress/e2e/webDriver-uni/working-with-txtboxes.cy.js",
       "file": "cypress/e2e/webDriver-uni/working-with-txtboxes.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e4f4d0ef-20de-4b82-acfc-81f148b38f3b",
+          "uuid": "a5280669-3665-4ed6-92e3-564a0107849f",
           "title": "Handlinng Text Boxes, Radial Buttons and More",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Selecting a checkbox and validating is checked",
               "fullTitle": "Handlinng Text Boxes, Radial Buttons and More Selecting a checkbox and validating is checked",
               "timedOut": null,
-              "duration": 1097,
+              "duration": 1192,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.title(\"WebDriver | Dropdown Menu(s) | Checkboxe(s) | Radio Button(s)\");\ncy.xpath(\"//input[@value='option-1']\").check().should(\"be.checked\");",
               "err": {},
-              "uuid": "c703de61-bef4-44a8-9a10-aff0ddc6e443",
-              "parentUUID": "e4f4d0ef-20de-4b82-acfc-81f148b38f3b",
+              "uuid": "9954dfce-0d0d-42d7-91c0-b7975484f3ba",
+              "parentUUID": "a5280669-3665-4ed6-92e3-564a0107849f",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Unselect a checkbox and validate it is unchecked",
               "fullTitle": "Handlinng Text Boxes, Radial Buttons and More Unselect a checkbox and validate it is unchecked",
               "timedOut": null,
-              "duration": 341,
+              "duration": 335,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "//cy.xpath(\"//input[@value='option-3']\").parent().as(\"checkBox3\")\ncy.get(\":nth-child(5) > input\").as(\"checkBox3\");\ncy.get(\"@checkBox3\").uncheck().should(\"not.be.checked\");",
               "err": {},
-              "uuid": "02e6ad15-b00a-4525-822b-ba6cbe2096d1",
-              "parentUUID": "e4f4d0ef-20de-4b82-acfc-81f148b38f3b",
+              "uuid": "14ae9e6a-a1b1-4c35-8d41-83fc7845beec",
+              "parentUUID": "a5280669-3665-4ed6-92e3-564a0107849f",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Selecting All Checkboxes",
               "fullTitle": "Handlinng Text Boxes, Radial Buttons and More Selecting All Checkboxes",
               "timedOut": null,
-              "duration": 518,
+              "duration": 521,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "cy.get(\"input[type='checkbox']\").check([\"option-1\", \"option-2\", \"option-3\", \"option-4\"]).should(\"be.checked\");",
               "err": {},
-              "uuid": "958a799f-0793-445d-ae9b-05b6536d0fbc",
-              "parentUUID": "e4f4d0ef-20de-4b82-acfc-81f148b38f3b",
+              "uuid": "91c24437-5235-416d-a274-bc499a3ff806",
+              "parentUUID": "a5280669-3665-4ed6-92e3-564a0107849f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c703de61-bef4-44a8-9a10-aff0ddc6e443",
-            "02e6ad15-b00a-4525-822b-ba6cbe2096d1",
-            "958a799f-0793-445d-ae9b-05b6536d0fbc"
+            "9954dfce-0d0d-42d7-91c0-b7975484f3ba",
+            "14ae9e6a-a1b1-4c35-8d41-83fc7845beec",
+            "91c24437-5235-416d-a274-bc499a3ff806"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1956,
+          "duration": 2048,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2022-11-08T17:08:52.881Z",
-    "end": "2022-11-08T17:08:55.983Z",
-    "duration": 3102,
+    "start": "2022-11-08T17:38:59.565Z",
+    "end": "2022-11-08T17:39:03.343Z",
+    "duration": 3778,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "1da480fd-39c8-4f83-a546-03e81fd93c59",
+      "uuid": "6190c0c3-35b2-4755-a398-dcf88215a226",
       "title": "",
       "fullFile": "cypress/e2e/webDriver-uni/upload-file.cy.js",
       "file": "cypress/e2e/webDriver-uni/upload-file.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "5e782b5c-c3e8-45a4-9305-8ff24e91ac8f",
+          "uuid": "149d30e6-3686-4425-844d-aa4161f1e211",
           "title": "Test Uploading files",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Uploading file",
               "fullTitle": "Test Uploading files Uploading file",
               "timedOut": null,
-              "duration": 2094,
+              "duration": 2596,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.get(\"#myFile\").selectFile(\"cypress/fixtures/laptop.png\");\ncy.get(\"#submit-button\").click();",
               "err": {},
-              "uuid": "ea855911-1899-4c64-afad-1758a15fa948",
-              "parentUUID": "5e782b5c-c3e8-45a4-9305-8ff24e91ac8f",
+              "uuid": "57640106-29b3-47f0-b658-59efb5bfa9cf",
+              "parentUUID": "149d30e6-3686-4425-844d-aa4161f1e211",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Upload No file...",
               "fullTitle": "Test Uploading files Upload No file...",
               "timedOut": null,
-              "duration": 964,
+              "duration": 1134,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.visit(\"/\");\ncy.get('#file-upload').invoke('removeAttr', 'target').click({\n  force: true\n});",
               "err": {},
-              "uuid": "27b91a63-bd24-47bc-988b-9e4abc9d951a",
-              "parentUUID": "5e782b5c-c3e8-45a4-9305-8ff24e91ac8f",
+              "uuid": "a11c4747-120a-40a0-8d2d-16c00e902c44",
+              "parentUUID": "149d30e6-3686-4425-844d-aa4161f1e211",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ea855911-1899-4c64-afad-1758a15fa948",
-            "27b91a63-bd24-47bc-988b-9e4abc9d951a"
+            "57640106-29b3-47f0-b658-59efb5bfa9cf",
+            "a11c4747-120a-40a0-8d2d-16c00e902c44"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3058,
+          "duration": 3730,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-11-08T17:08:38.393Z",
-    "end": "2022-11-08T17:08:40.562Z",
-    "duration": 2169,
+    "start": "2022-11-08T17:38:39.958Z",
+    "end": "2022-11-08T17:38:42.005Z",
+    "duration": 2047,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a24052ad-4c18-4448-a3c3-eddba005c4be",
+      "uuid": "be3edee3-46fd-4fcf-b58a-0d845839c9a4",
       "title": "",
       "fullFile": "cypress/e2e/webDriver-uni/mouse-actions.cy.js",
       "file": "cypress/e2e/webDriver-uni/mouse-actions.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "62598b71-4ade-4c22-bec2-bdaa3ee43fc8",
+          "uuid": "1496b463-1304-492e-8b66-2c69a94f763c",
           "title": "Working with mouse actios",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Click and hold mouse to validate change of color",
               "fullTitle": "Working with mouse actios Click and hold mouse to validate change of color",
               "timedOut": null,
-              "duration": 2132,
+              "duration": 2019,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.xpath(\"//div[@id='click-box']\").trigger(\"mousedown\", {\n  which: 1\n}).then($element => {\n  expect($element).to.have.css(\"background-color\", \"rgb(0, 255, 0)\");\n});",
               "err": {},
-              "uuid": "e8c45f85-dd9d-49a5-a487-c372f4226aa1",
-              "parentUUID": "62598b71-4ade-4c22-bec2-bdaa3ee43fc8",
+              "uuid": "f7b27cc2-ad2d-45f7-89d2-0c2855d9ccca",
+              "parentUUID": "1496b463-1304-492e-8b66-2c69a94f763c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e8c45f85-dd9d-49a5-a487-c372f4226aa1"
+            "f7b27cc2-ad2d-45f7-89d2-0c2855d9ccca"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2132,
+          "duration": 2019,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

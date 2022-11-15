@@ -8,13 +8,6 @@ describe("Hnadling datepicker", () => {
       cy.title("WebDriver | Datepicker");
     });
     it("Selecting dates from a particular datepicker", () => {
-        // let date = new Date() //creating an object
-        // date.setDate(date.getDate()) //this will get the current date
-        // cy.log(date.getDate())
-
-        // let date2 = new Date()
-        // date2.setDate(date2.getDate() + 5)
-        // cy.log(date2.getDate())
         cy.get("#datepicker").click()
 
         var date = new Date();

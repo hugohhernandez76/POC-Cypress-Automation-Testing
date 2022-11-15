@@ -12,7 +12,8 @@
     "delete-videos": "rm -rf cypress/videos/* || true",
     "merge-mochawesome-reports": "npx mochawesome-merge cypress/results/mochawesome/*.json > mochawesome.json && npx marge mochawesome.json",
     "delete-mochawesome-report": "rm -rf mochawesome-report/* || true",
-    "cypress-regression-pack": "npm run delete-results && npm run delete-videos && npm run delete-mochawesome-report && npm run triggerWebdriverUniOnly && npm run merge-mochawesome-reports"
+    "cypress-regression-pack": "npm run delete-results && npm run delete-videos && npm run delete-mochawesome-report && npm run triggerWebdriverUniOnly && npm run merge-mochawesome-reports",
+    "cypressDashboardTest": "npm run delete-results && npm run delete-videos && npm run delete-mochawesome-report && npx cypress run --record --key a5b68f8d-d9ae-43c5-89cf-ae831419e58f --spec cypress/e2e/webDriver-uni/*"
 
   },
   "repository": {

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-11-08T17:09:01.763Z",
-    "end": "2022-11-08T17:09:03.665Z",
-    "duration": 1902,
+    "start": "2022-11-08T17:39:11.558Z",
+    "end": "2022-11-08T17:39:13.539Z",
+    "duration": 1981,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "eadc817d-d6b7-401e-a20b-f9545b23fb82",
+      "uuid": "14559d9f-1c76-4a9e-be24-5c3ce8c8b09c",
       "title": "",
       "fullFile": "cypress/e2e/webDriver-uni/working-with-radioBtns.cy.js",
       "file": "cypress/e2e/webDriver-uni/working-with-radioBtns.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "073ebbfb-ce2b-4577-9bc2-9a353104184e",
+          "uuid": "50c42ad6-851d-45fb-bf6b-4ec0c3b33322",
           "title": "Handlinng Radio BTNS",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Selected & Disabled",
               "fullTitle": "Handlinng Radio BTNS Selected & Disabled",
               "timedOut": null,
-              "duration": 1849,
+              "duration": 1934,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.get(\"[id='radio-buttons-selected-disabled']\").find(\"[value='lettuce']\").should(\"not.be.checked\");\ncy.get(\"[id='radio-buttons-selected-disabled']\").find(\"[value='cabbage']\").should(\"not.be.checked\");\ncy.get(\"[id='radio-buttons-selected-disabled']\").find(\"[value='pumpkin']\").should(\"be.checked\");",
               "err": {},
-              "uuid": "99350e96-2c89-4b3d-8d92-df4956174a0f",
-              "parentUUID": "073ebbfb-ce2b-4577-9bc2-9a353104184e",
+              "uuid": "274bfcd9-d7e2-49d0-bad1-d85c3583c85b",
+              "parentUUID": "50c42ad6-851d-45fb-bf6b-4ec0c3b33322",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "99350e96-2c89-4b3d-8d92-df4956174a0f"
+            "274bfcd9-d7e2-49d0-bad1-d85c3583c85b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1849,
+          "duration": 1934,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-11-08T17:08:22.986Z",
-    "end": "2022-11-08T17:08:25.441Z",
-    "duration": 2455,
+    "start": "2022-11-08T17:38:18.339Z",
+    "end": "2022-11-08T17:38:20.769Z",
+    "duration": 2430,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "92595abd-447f-4645-a02a-de66255b6706",
+      "uuid": "50fb221b-7e8e-4e0a-a350-e94269e04714",
       "title": "",
       "fullFile": "cypress/e2e/webDriver-uni/date-picker.cy.js",
       "file": "cypress/e2e/webDriver-uni/date-picker.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "93ef1b2b-bcc3-4263-8e45-4bca00102f70",
+          "uuid": "c763b7c7-1f70-43ad-9697-df5e5673a430",
           "title": "Hnadling datepicker",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Selecting dates from a particular datepicker",
               "fullTitle": "Hnadling datepicker Selecting dates from a particular datepicker",
               "timedOut": null,
-              "duration": 2432,
+              "duration": 2400,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "// let date = new Date() //creating an object\n// date.setDate(date.getDate()) //this will get the current date\n// cy.log(date.getDate())\n// let date2 = new Date()\n// date2.setDate(date2.getDate() + 5)\n// cy.log(date2.getDate())\ncy.get(\"#datepicker\").click();\nvar date = new Date();\ndate.setDate(date.getDate() + 90);\nvar futureYear = date.getFullYear();\nvar futureMonth = date.toLocaleString(\"default\", {\n  month: \"long\"\n});\nvar futureDay = date.getDate();\ncy.log(\"Future year to select: \" + futureYear);\ncy.log(\"Future month to select: \" + futureMonth);\ncy.log(\"Future day to select: \" + futureDay);\nfunction selectMonthAndYear() {\n  cy.get('.datepicker-dropdown').find('.datepicker-switch').first().then(currentDate => {\n    if (!currentDate.text().includes(futureYear)) {\n      cy.get('.next').first().click();\n      selectMonthAndYear();\n    }\n  }).then(() => {\n    cy.get('.datepicker-dropdown').find('.datepicker-switch').first().then(currentDate => {\n      if (!currentDate.text().includes(futureMonth)) {\n        cy.get('.next').first().click();\n        selectMonthAndYear();\n      }\n    });\n  });\n}\nfunction selectFutureDay() {\n  cy.get('[class=\"day\"]').contains(futureDay).click();\n}\nselectMonthAndYear();\nselectFutureDay();",
               "err": {},
-              "uuid": "ea375a43-9de1-4e77-8542-ab435b8315ff",
-              "parentUUID": "93ef1b2b-bcc3-4263-8e45-4bca00102f70",
+              "uuid": "0ec29ff5-7246-4b6a-a39b-828b45b6b746",
+              "parentUUID": "c763b7c7-1f70-43ad-9697-df5e5673a430",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ea375a43-9de1-4e77-8542-ab435b8315ff"
+            "0ec29ff5-7246-4b6a-a39b-828b45b6b746"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2432,
+          "duration": 2400,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

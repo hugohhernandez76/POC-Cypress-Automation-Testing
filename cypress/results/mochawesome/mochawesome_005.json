@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-11-08T17:08:31.294Z",
-    "end": "2022-11-08T17:08:33.185Z",
-    "duration": 1891,
+    "start": "2022-11-08T17:38:28.464Z",
+    "end": "2022-11-08T17:38:30.759Z",
+    "duration": 2295,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "95ca458e-da3b-400d-ac30-33736a7d62fb",
+      "uuid": "41d70076-76b2-4373-8d21-350126b0b501",
       "title": "",
       "fullFile": "cypress/e2e/webDriver-uni/handle-js-alerts.cy.js",
       "file": "cypress/e2e/webDriver-uni/handle-js-alerts.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "da1d41bd-c38f-436d-b152-ae7a0e891211",
+          "uuid": "3a986c88-0e60-44a5-a1cd-079e70b8b1c8",
           "title": "Handlinng Alerts",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Confirm I have clicked the Cancel button",
               "fullTitle": "Handlinng Alerts Confirm I have clicked the Cancel button",
               "timedOut": null,
-              "duration": 1866,
+              "duration": 2267,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.get(\"#popup-alerts\").invoke(\"removeAttr\", \"target\").click();\ncy.url().should(\"include\", \"Popup-Alerts\"); //Validating I landed in the correct page so I extracted the text to confirm the page.\ncy.xpath(\"//div[@id='main-header']/h1\").then($alertsPage => {\n  const validateAlertsPage = $alertsPage.text();\n  expect(validateAlertsPage).to.eq(\"Annoying Popup & Alerts!\");\n});\ncy.get(\"#button4\").click(); //using window:confirm allows you to either select or cancel\ncy.on(\"window:confirm\", str => {\n  //user true to select OK on the alert or user false to select cancel\n  return false;\n});\ncy.get(\"#confirm-alert-text\").contains(\"You pressed Cancel!\");",
               "err": {},
-              "uuid": "d98b71af-2db1-4c52-8a9b-5d80afea1b8a",
-              "parentUUID": "da1d41bd-c38f-436d-b152-ae7a0e891211",
+              "uuid": "c1ca94a1-c944-4d31-ad43-00d3f5a1dcdd",
+              "parentUUID": "3a986c88-0e60-44a5-a1cd-079e70b8b1c8",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d98b71af-2db1-4c52-8a9b-5d80afea1b8a"
+            "c1ca94a1-c944-4d31-ad43-00d3f5a1dcdd"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1866,
+          "duration": 2267,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

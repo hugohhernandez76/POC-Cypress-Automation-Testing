@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2022-11-08T17:08:34.644Z",
-    "end": "2022-11-08T17:08:36.879Z",
-    "duration": 2235,
+    "start": "2022-11-08T17:38:33.852Z",
+    "end": "2022-11-08T17:38:37.459Z",
+    "duration": 3607,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "fc33252a-2e02-4c8b-aa60-e4957d78dd60",
+      "uuid": "f67bff5b-ac79-41a3-bbed-53f09c676fc3",
       "title": "",
       "fullFile": "cypress/e2e/webDriver-uni/handling-data-tables.cy.js",
       "file": "cypress/e2e/webDriver-uni/handling-data-tables.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0f9f9a69-a634-44f0-a902-3e5484504511",
+          "uuid": "d60bcd7b-e334-4411-a144-df4a0985e177",
           "title": "Hnadling data from tables",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Calculate and assert the total age of all users",
               "fullTitle": "Hnadling data from tables Calculate and assert the total age of all users",
               "timedOut": null,
-              "duration": 1709,
+              "duration": 2824,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "let userDetails = [];\nlet totalAge = 0;\ncy.get(\"#thumbnail-1 td\").each($el => {\n  userDetails.push($el.text());\n}).then(() => {\n  for (let data of userDetails) {\n    if (Number(data)) {\n      totalAge += Number(data);\n    }\n  }\n  expect(totalAge).to.equal(322);\n});",
               "err": {},
-              "uuid": "3dd34b30-d667-42ee-9b5b-39e8851fcb9b",
-              "parentUUID": "0f9f9a69-a634-44f0-a902-3e5484504511",
+              "uuid": "e3373d4e-d811-4368-a95c-12be56b087b4",
+              "parentUUID": "d60bcd7b-e334-4411-a144-df4a0985e177",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Selecting a particular user from second column",
               "fullTitle": "Hnadling data from tables Selecting a particular user from second column",
               "timedOut": null,
-              "duration": 501,
+              "duration": 751,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.get(\"#thumbnail-1 tr td:nth-child(2)\").each(($el, index, $list) => {\n  const myText = $el.text();\n  if (myText.includes(\"Wood\")) {\n    cy.get(\"#thumbnail-1 tr td:nth-child(2)\").eq(index) //gets the indext instead of the name\n    .next() // goes to the next cell which is the age\n    .then(function (age) {\n      const usrAge = age.text();\n      expect(usrAge).to.equal(\"80\");\n    });\n  }\n});",
               "err": {},
-              "uuid": "583a2ead-a230-4f8a-a25e-c73195bafbce",
-              "parentUUID": "0f9f9a69-a634-44f0-a902-3e5484504511",
+              "uuid": "ed93c16c-bafb-46e8-9183-e7b3ec675b20",
+              "parentUUID": "d60bcd7b-e334-4411-a144-df4a0985e177",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3dd34b30-d667-42ee-9b5b-39e8851fcb9b",
-            "583a2ead-a230-4f8a-a25e-c73195bafbce"
+            "e3373d4e-d811-4368-a95c-12be56b087b4",
+            "ed93c16c-bafb-46e8-9183-e7b3ec675b20"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2210,
+          "duration": 3575,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

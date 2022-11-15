@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-11-08T17:08:57.267Z",
-    "end": "2022-11-08T17:09:00.473Z",
-    "duration": 3206,
+    "start": "2022-11-08T17:39:05.678Z",
+    "end": "2022-11-08T17:39:08.913Z",
+    "duration": 3235,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b129546e-cf91-443f-ab87-266a8cf6ac23",
+      "uuid": "6230b17c-5709-4119-adcf-6f51ecac793f",
       "title": "",
       "fullFile": "cypress/e2e/webDriver-uni/working-with-iframes.cy.js",
       "file": "cypress/e2e/webDriver-uni/working-with-iframes.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7509b371-b1d2-4ab7-8b33-20e016a509a1",
+          "uuid": "912ce3c1-4100-4636-b7e1-7641b6015356",
           "title": "Handlinng Alerts",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Confirm Correct Text Alert",
               "fullTitle": "Handlinng Alerts Confirm Correct Text Alert",
               "timedOut": null,
-              "duration": 3148,
+              "duration": 3175,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.get(\"#iframe\").invoke(\"removeAttr\", \"target\").click();\ncy.url().should(\"include\", \"IFrame\"); //We are using an alias to get access to the body where the other elements are allocated\ncy.get(\"#frame\").then($iframe => {\n  const body = $iframe.contents().find(\"body\");\n  cy.wrap(body).as(\"iframe\");\n});\ncy.get(\"@iframe\").find(\"#button-find-out-more\").click();\ncy.get(\"@iframe\").find(\"#myModal\").as(\"modal\");\ncy.get(\"@modal\").should($expectedText => {\n  const text = $expectedText.text();\n  expect(text).to.include(\"Welcome to webdriveruniversity.com we sell a wide range of electrical goods \");\n});\ncy.get(\"@modal\").contains(\"Close\").click();",
               "err": {},
-              "uuid": "084946f7-22e0-4b38-a960-5aad0301c4ce",
-              "parentUUID": "7509b371-b1d2-4ab7-8b33-20e016a509a1",
+              "uuid": "77a531df-5269-4e0e-8b61-25cd2c63986f",
+              "parentUUID": "912ce3c1-4100-4636-b7e1-7641b6015356",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "084946f7-22e0-4b38-a960-5aad0301c4ce"
+            "77a531df-5269-4e0e-8b61-25cd2c63986f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3148,
+          "duration": 3175,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
